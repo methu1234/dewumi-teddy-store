@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart & Checkout - Dewumi Teddy Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f4;
+      color: #333;
+    }
+    header {
+      background: #ffe4ec;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      color: #d26a8e;
+      margin: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .cart {
+      margin-bottom: 2rem;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-right: 1rem;
+    }
+    
+    .cart-item-details {
+      flex-grow: 1;
+    }
+    .cart-item-controls input {
+      width: 40px;
+      padding: 0.3rem;
+      text-align: center;
+    }
+    .cart-item-controls button {
+      background: none;
+      border: none;
+      color: #d26a8e;
+      cursor: pointer;
+      margin-left: 0.5rem;
+    }
+    .subtotal {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .checkout-form {
+      background: #fff0f5;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  background-color: #ffdfea;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+.top-nav a {
+  text-decoration: none;
+  color: #d26a8e;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.top-nav a:hover {
+  text-decoration: underline;
+    }
+    .hero {
+      background: url('https://example.com/hero-banner.jpg') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      background-color: rgba(210, 106, 142, 0.8);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+    .intro {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .category {
+      text-align: center;
+      width: 200px;
+      margin: 20px;
+    }
+    .category img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .products {
+      padding: 40px 20px;
+    }
+    .product-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 200px;
+      margin: 20px;
+      text-align: center;
+      padding: 20px;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .newsletter {
+      background: #fff0f5;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #d26a8e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+    .reviews {
+      padding: 40px 20px;
+      background: #faf0f5;
+    }
+    .review {
+      text-align: center;
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    footer {
+      background-color: #f5d0d6;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #444;
+      text-decoration: none;
+    }
+     .slider {
+        width: 100%;
+        max-width: 700px;
+        margin: 40px auto;
+        text-align: center;
+      }
+  
+      .slider img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  
+</head>
+<body>
+  <header>
+    <img src="t.png" alt="Dewumi Logo" class="logo">
+  </header>
+
+  <nav class="top-nav">
+    <a href="C:\Users\User\Desktop\tedyy store\Home.html"><span>🏠</span> Home</a>
+    <a href="C:\Users\User\Desktop\tedyy store\teddy.html"><span>🧸</span> Teddy</a>
+    <a href="C:\Users\User\Desktop\tedyy store\purse.html"><span>👜</span> Purse</a>
+    <a href="C:\Users\User\Desktop\tedyy store\keytag.html"><span>🔑</span> Keytag</a>
+    <a href="C:\Users\User\Desktop\tedyy store\handbag.html"><span>🧳</span> Handbag</a>
+    <a href="C:\Users\User\Desktop\tedyy store\cart and checkout.html"><span>🛒</span> Cart and Checkout</a>
+    <a href="C:\Users\User\Desktop\tedyy store\contact us.html"><span>ℹ️</span> About Us</a>
+  </nav>
+
+
+
+  <div class="slider">
+    <img id="sliderImage" src="t1.jpg" alt="Teddy Bear">
+  </div>
+
+  <script src="script.js"></script>
+
+
+  <section class="newsletter">
+    <h2>Join To Our WhatsApp Group</h2>
+    <p>Get exclusive deals and updates!</p>
+    <input type="Whatsapp Number" placeholder="Enter your Whatsapp Number" />
+    <button>Join</button>
+  </section>
+
+  <section class="reviews">
+    <h2 style="text-align:center; color: #d26a8e;">What Our Customers Say</h2>
+    <div class="review">“Absolutely love the teddy I got for my niece. Soft, cute, and perfect!” – Jane D.</div>
+    <div class="review">“Stylish handbags and quick delivery. Highly recommend!” – Priya S.</div>
+    <div class="review">“The keytags are adorable! I bought several as gifts.” – Anusha R.</div>
+    <div class="review">“I gifted the Fluffy Heart Teddy to my girlfriend, and she couldn’t stop hugging it. A perfect cuddle companion!” – Raj M.</div>
+    <div class="review">“The quality of the handbag exceeded my expectations. So elegant and well-crafted.” – Meena J.</div>
+  </section>
+
+  <footer>
+    <p>Contact us: hello@dewumiteddystore.com | Follow us:
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+    </p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Shipping & Returns</a></p>
+    <p>&copy; 2025 Dewumi Teddy Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

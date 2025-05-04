@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart & Checkout - Dewumi Teddy Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    header h1 {
+        font-family: 'Playfair Display' ;
+        font-size: 5rem;
+        color: #d26a8e;
+        margin: 0 auto;
+        flex-grow: 1;
+        text-align: center;
+    }
+    header {
+        background-color: #ffe4ec;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f4;
+      color: #333;
+    }
+    .logo {
+        height: 140px;
+    }
+    header {
+      background: #ffe4ec;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      color: #d26a8e;
+      margin: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .cart {
+      margin-bottom: 2rem;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-right: 1rem;
+    }
+    
+    .cart-item-details {
+      flex-grow: 1;
+    }
+    .cart-item-controls input {
+      width: 40px;
+      padding: 0.3rem;
+      text-align: center;
+    }
+    .cart-item-controls button {
+      background: none;
+      border: none;
+      color: #d26a8e;
+      cursor: pointer;
+      margin-left: 0.5rem;
+    }
+    .subtotal {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .checkout-form {
+      background: #fff0f5;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  background-color: #ffdfea;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+.top-nav a {
+  text-decoration: none;
+  color: #d26a8e;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.top-nav a:hover {
+  text-decoration: underline;
+}
+    .checkout-form h2 {
+      color: #d26a8e;
+      margin-bottom: 1rem;
+    }
+    .checkout-form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .checkout-form input, .checkout-form select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.3rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .checkout-form button {
+      margin-top: 1.5rem;
+      background: #d26a8e;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .cart-item img {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <img src="t.png" alt="Dewumi Logo" class="logo">
+        <h1>Dewumi Teddy Store</h1>
+      </header>
+    
+      <nav class="top-nav">
+        <a href="C:\Users\User\Desktop\tedyy store\Home.html"><span>🏠</span> Home</a>
+        <a href="C:\Users\User\Desktop\tedyy store\teddy.html"><span>🧸</span> Teddy</a>
+        <a href="C:\Users\User\Desktop\tedyy store\purse.html"><span>👜</span> Purse</a>
+        <a href="C:\Users\User\Desktop\tedyy store\keytag.html"><span>🔑</span> Keytag</a>
+        <a href="C:\Users\User\Desktop\tedyy store\handbag.html"><span>🧳</span> Handbag</a>
+        <a href="C:\Users\User\Desktop\tedyy store\cart and checkout.html"><span>🛒</span> Cart and Checkout</a>
+        <a href="C:\Users\User\Desktop\tedyy store\contact us.html"><span>ℹ️</span> About Us</a>
+      </nav>
+<div class="container">
+  <!-- Cart Section -->
+  <section class="cart">
+    <div class="cart-item">
+      <img src="https://example.com/teddy1.jpg" alt="Teddy 1">
+      <div class="cart-item-details">
+        <div><strong>Fluffy Pink Bear</strong></div>
+        <div>$25.00</div>
+      </div>
+      <div class="cart-item-controls">
+        <input type="number" value="1" min="1">
+        <button>Edit</button>
+        <button>Remove</button>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <img src="https://example.com/purse1.jpg" alt="Purse 1">
+      <div class="cart-item-details">
+        <div><strong>Pastel Zipper Purse</strong></div>
+        <div>$15.99</div>
+      </div>
+      <div class="cart-item-controls">
+        <input type="number" value="1" min="1">
+        <button>Edit</button>
+        <button>Remove</button>
+      </div>
+    </div>
+
+    <div class="subtotal">
+      Subtotal: $40.99
+    </div>
+  </section>
+
+  <!-- Checkout Section -->
+  <section class="checkout-form">
+    <h2>Checkout</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Shipping Address</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="billing">Billing Address (if different)</label>
+      <input type="text" id="billing" name="billing">
+
+      <label for="delivery">Delivery Method</label>
+      <select id="delivery" name="delivery">
+        <option value="standard">Standard (3-5 days)</option>
+        <option value="express">Express (1-2 days)</option>
+      </select>
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment">
+        <option value="card">Credit/Debit Card</option>
+        <option value="bank deposit">Back Deposit Recitpt Sent For Whatsapp Number) </option>
+      </select>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dewumi Teddy Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff8f4;
+      color: #444;
+    }
+    header {
+      background-color: #ffe4ec;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      height: 140px;
+    }
+    header h1 {
+      font-family: 'Playfair Display' ;
+      font-size: 5rem;
+      color: #d26a8e;
+      margin: 0 auto;
+      flex-grow: 1;
+      text-align: center;
+    }
+    .top-nav {
+      position: sticky;
+      top: 0;
+      background-color: #ffdfea;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      z-index: 999;
+      flex-wrap: wrap;
+    }
+    .top-nav a {
+      text-decoration: none;
+      color: #d26a8e;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://example.com/hero-banner.jpg') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      background-color: rgba(210, 106, 142, 0.8);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+    .intro {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .category {
+      text-align: center;
+      width: 200px;
+      margin: 20px;
+    }
+    .category img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .products {
+      padding: 40px 20px;
+    }
+    .product-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 200px;
+      margin: 20px;
+      text-align: center;
+      padding: 20px;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .newsletter {
+      background: #fff0f5;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #d26a8e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+    .reviews {
+      padding: 40px 20px;
+      background: #faf0f5;
+    }
+    .review {
+      text-align: center;
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    footer {
+      background-color: #f5d0d6;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #444;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="t.png" alt="Dewumi Logo" class="logo">
+    <h1>Dewumi Teddy Store</h1>
+  </header>
+
+  <nav class="top-nav">
+    <a href="C:\Users\User\Desktop\tedyy store\Home.html"><span>🏠</span> Home</a>
+    <a href="C:\Users\User\Desktop\tedyy store\teddy.html"><span>🧸</span> Teddy</a>
+    <a href="C:\Users\User\Desktop\tedyy store\purse.html"><span>👜</span> Purse</a>
+    <a href="C:\Users\User\Desktop\tedyy store\keytag.html"><span>🔑</span> Keytag</a>
+    <a href="C:\Users\User\Desktop\tedyy store\handbag.html"><span>🧳</span> Handbag</a>
+    <a href="C:\Users\User\Desktop\tedyy store\cart and checkout.html"><span>🛒</span> Cart and Checkout</a>
+    <a href="C:\Users\User\Desktop\tedyy store\contact us.html"><span>ℹ️</span> About Us</a>
+  </nav>
+</head>
+<body>
+
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt; <a href="shop.html">Shop</a> &gt; Teddy Bears
+  </div>
+
+  <div class="shop-container">
+    <aside class="filters">
+      <h3>Filters</h3>
+      <label>Price Range:
+        <select>
+          <option>All</option>
+          <option>Under $20</option>
+          <option>$20 - $40</option>
+          <option>$40+</option>
+        </select>
+      </label>
+      <label>Color:
+        <select>
+          <option>All</option>
+          <option>Pink</option>
+          <option>Beige</option>
+          <option>Brown</option>
+        </select>
+      </label>
+      <label>Size:
+        <select>
+          <option>All</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+      </label>
+      <label>Sort By:
+        <select>
+          <option>Newest</option>
+          <option>Best Selling</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </label>
+    </aside>
+
+    <section class="products">
+      <div class="product-card">
+        <img src="https://example.com/teddy1-front.jpg" alt="Teddy Bear 1">
+        <img src="https://example.com/teddy1-side.jpg" class="hover-img" alt="Teddy Bear 1 Side View">
+        <div class="product-name">Fluffy Pink Bear</div>
+        <div class="price">$25.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://example.com/teddy2-front.jpg" alt="Teddy Bear 2">
+        <img src="https://example.com/teddy2-side.jpg" class="hover-img" alt="Teddy Bear 2 Side View">
+        <div class="product-name">Creamy Hugs Bear</div>
+        <div class="price">$29.00</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://example.com/teddy3-front.jpg" alt="Teddy Bear 3">
+        <img src="https://example.com/teddy3-side.jpg" class="hover-img" alt="Teddy Bear 3 Side View">
+        <div class="product-name">Beige Snuggle Bear</div>
+        <div class="price">$34.99</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
